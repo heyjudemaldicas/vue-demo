@@ -91,9 +91,10 @@ ul {
   height: 60px;
 }
 
-#listDiv {
+#todo-list {
   padding-top: 40px;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 li {
@@ -102,28 +103,32 @@ li {
   margin-right: 30px;
 }
 
-.todoitems {
-  text-align: left;
-  margin-top: 0px;
-  margin-bottom: 5px;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 10px;
-  width: 500px;
+.todo-items {
+  margin: 0 auto 10px;
+  padding: 0 10px;
+  min-width: 200px;
+  max-width: 500px;
+  width: auto;
   border: 1px solid lightgrey;
   border-bottom-width: 2px;
   background-color: white;
   border-radius: 5px;
   height: 50px;
   font-weight: bold;
-  margin-left: 510px;
   color: black;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-buttons {
+  margin: 0;
 }
 
 .editbutton {
   cursor: pointer;
-  float: right;
   color: white;
   background-color: #516beb;
   border-radius: 5px;
@@ -134,7 +139,6 @@ li {
 
 .deletebutton {
   cursor: pointer;
-  float: right;
   color: white;
   background-color: red;
   border-radius: 5px;
@@ -153,13 +157,14 @@ input[type="text"] {
   background-color: white;
   font-size: 20px;
   font-weight: 200;
-  width: 440px;
+  max-width: 440px;
+  width: 100%;
   margin-bottom: 40px;
 }
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #ffce45;
+  box-shadow: inset 0 -2px 0 0 #ffce45;
 }
 
 ::placeholder {
@@ -177,16 +182,11 @@ div {
   width: 60px;
   border-radius: 5px;
   margin-left: 8px;
-  border-color: #52d681;
-  background-color: #52d681;
+  border-color: #49b672;
+  background-color: #49b672;
   color: #fff;
   font-size: 20px;
   border-width: 0;
-}
-
-.addButton:hover {
-  background-color: white;
-  color: #52d681;
 }
 
 .aboutDiv,
@@ -198,25 +198,5 @@ div {
   margin-left: 380px;
   background-color: #fff;
   padding-bottom: 50px;
-}
-
-p {
-  color: #1c1427;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.linkTag {
-  font-size: 15px;
-  padding: 5px;
-  text-decoration: none;
-  margin-right: 20px;
-  color: white;
-  background-color: #516beb;
-  border-radius: 3px;
-}
-.contactDiv a:hover {
-  background-color: #dfdfdf;
-  color: #516beb;
 }
 </style>
